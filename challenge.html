@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./stylechallenge.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./Logo.png" alt="Logo alura">
+    </header>
+
+    <div class="container">
+        <div class="encriptar">
+            <textarea  id="input-text" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="terminos">
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="encriptado">
+            <img src="./Muñeco.png" alt="muneco"  id="muneco">
+            <div class="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+                <textarea id="output-text" cols="30" rows="10" placeholder="Ingrese un mensaje para encriptar o desencriptar"></textarea>
+                <button class="btn-copiar" onclick="copy()">Copiar</button>
+             
+            </div>
+            
+        </div>
+        <div>
+      
+</body>
+
+<footer>Desarrollado por Hannya Figueroa </footer>
+
+<script src="./script.js"></script>
+
+</html>
